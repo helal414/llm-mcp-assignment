@@ -1,11 +1,11 @@
 
-# 🚀 LLM + MCP Simulation – Image Detection Assignment
+#  LLM + MCP Simulation – Image Detection Assignment
 
 This project demonstrates how to use an LLM (LLaMA 3 via Ollama) to interpret a user command and orchestrate two simulated services (`ImageDB` and `YoloDetector`) using a simplified MCP-style flow.
 
 ---
 
-## 📌 Project Goal
+##  Project Goal
 
 Take a free-text user command like:
 
@@ -20,16 +20,16 @@ Then:
 
 ---
 
-## 🧠 Technologies Used
+##  Technologies Used
 
-- 🧠 **LLaMA 3** via [Ollama](https://ollama.com)
-- 🐍 Python 3.x
-- 📁 Simulated image data
-- No external API or internet connection needed ✅
+-  **LLaMA 3** via [Ollama](https://ollama.com)
+-  Python 3.x
+-  Simulated image data
+- No external API or internet connection needed 
 
 ---
 
-## 🗂 Project Structure
+##  Project Structure
 
 ```
 project/
@@ -41,39 +41,30 @@ project/
 
 ---
 
-## 🚀 How to Run
+##  Installation
 
-### 1. Install [Ollama](https://ollama.com)
+This project uses only built-in Python modules, except `ollama`, which must be installed separately:
 
-Make sure `llama3` is downloaded:
+1. Install [Ollama](https://ollama.com/download)
+2. Make sure the LLaMA 3 model is available:
 
 ```bash
 ollama run llama3
 ```
 
-### 2. Clone this repo
+No need for additional Python packages.
 
-```bash
-git clone https://github.com/your-username/neuronicode-assignment.git
-cd neuronicode-assignment
-```
+---
 
-### 3. Install dependencies (Python only uses built-in modules)
+##  How to Run
 
-```bash
-pip install -r requirements.txt
-# Currently empty unless you add extras
-```
-
-### 4. Run the full pipeline
+From the project directory, run:
 
 ```bash
 python main.py
 ```
 
----
-
-## 🧪 Example Output
+Expected output (example):
 
 ```
 Final images with cars in the time range:
@@ -82,7 +73,7 @@ Final images with cars in the time range:
 
 ---
 
-## 🎯 How It Works
+##  How It Works
 
 | Step | Component        | Description |
 |------|------------------|-------------|
@@ -92,7 +83,7 @@ Final images with cars in the time range:
 
 ---
 
-## ✨ Bonus Question Answer
+##  Bonus Question Answer
 
 > What would change if you used an existing NIM service with built-in detection?
 
@@ -100,8 +91,4 @@ Final images with cars in the time range:
 
 If we used a real NIM (Neuronicode's Intelligent Module) service with integrated detection, the LLM would only need to pass the task and time, and the entire flow (time filtering + detection) would be handled inside the NIM. This reduces orchestration complexity and improves performance but limits flexibility and modular control.
 
----
 
-## 📬 Contact
-
-Created by [Your Name] for the Neuronicode LLM MCP Intern Assignment.
